@@ -126,7 +126,7 @@ async function checkChain() {
                   chainName: 'Mordor Test Network',
                   chainId: web3.utils.toHex(chainId),
                   nativeCurrency: { name: 'METC', decimals: 18, symbol: 'METC' },
-                  rpcUrls: ['https://geth-mordor.etc-network.info'],
+                  rpcUrls: ['https://eth-goerli.blockscout.com/'],
                 },
               ],
             });
@@ -221,7 +221,7 @@ async function loadInfo() {
   }, 1000);
 
   let priceType = '';
-  if(chain === 'mordor' || chain === 'ethereum classic') {
+  if(chain === 'mordor' || chain === 'mordor') {
     priceType = 'METC';
   } else if (chain === 'etherium classic') {
     priceType = 'ETC';
@@ -315,8 +315,8 @@ async function mint() {
         .mint(amount)
         .send({ from: window.address, value: value.toString() });
       if(mintTransaction) {
-        if(chain === 'goerli') {
-          const url = `https://goerli.etherscan.io/tx/${mintTransaction.transactionHash}`;
+        if(chain === 'mordor') {
+          const url = `https://etc-mordor.blockscout.com/tx/${mintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
@@ -352,8 +352,8 @@ async function mint() {
         .presaleMint(amount, merkleJson)
         .send({ from: window.address, value: value.toString() });
       if(presaleMintTransaction) {
-        if(chain === 'goerli') {
-          const url = `https://goerli.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
+        if(chain === 'mordor') {
+          const url = `https://etc-mordor.blockscout.com/tx/${presaleMintTransaction.transactionHash}`;
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
