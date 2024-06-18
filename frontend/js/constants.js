@@ -1,5 +1,5 @@
 const contractAddress = "0xD7BfC3360138C78F7c286C755964c45BB35cA6a0"; // Replace with your own contract address
-const chain = 'mordor'; // mrdor, or ethereum classic
+const chain = 'mordor'; // mordor, or ethereum classic
 
 const welcome_h1 = "Welcome to the Mink Coin NFT Collection!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
