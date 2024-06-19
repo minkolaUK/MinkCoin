@@ -126,7 +126,7 @@ async function checkChain() {
                   chainName: 'Mordor Test Network',
                   chainId: web3.utils.toHex(chainId),
                   nativeCurrency: { name: 'METC', decimals: 18, symbol: 'METC' },
-                  rpcUrls: ['https://eth-goerli.blockscout.com/'],
+                  rpcUrls: ['https://api.tatum.io/v3/blockchain/node/ethereum-classic-testnet'],
                 },
               ],
             });
@@ -138,7 +138,7 @@ async function checkChain() {
                   chainName: 'Etherium Classic Mainnet',
                   chainId: web3.utils.toHex(chainId),
                   nativeCurrency: { name: 'ETC', decimals: 18, symbol: 'ETC' },
-                  rpcUrls: ['https://geth-at.etc-network.info'],
+                  rpcUrls: ['https://api.tatum.io/v3/blockchain/node/ethereum-classic-testnet'],
                 },
               ],
             });
