@@ -1,9 +1,7 @@
 /* FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* GLOBAL STYLES */
-
 :root {
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Arvo", serif;
@@ -43,7 +41,6 @@ body {
 }
 
 /* HEADER */
-
 header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
@@ -98,7 +95,6 @@ header .container {
 }
 
 /* BUTTONS */
-
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -117,9 +113,11 @@ header .container {
   text-decoration: none;
   outline: none;
 }
+
 .btn:hover {
   box-shadow: none;
 }
+
 .btn:disabled {
   cursor: default;
 }
@@ -137,7 +135,6 @@ header .container {
 }
 
 /* CARD */
-
 .card {
   position: relative;
   background-color: var(--bg-color);
@@ -157,7 +154,6 @@ header .container {
 }
 
 /* COUNTDOWN SECTION */
-
 section {
   flex: 1 1 auto;
 }
@@ -178,11 +174,13 @@ section {
   display: flex;
   gap: 2rem;
 }
+
 .countdown .clock-item {
   list-style: none;
   width: 70px;
   height: auto;
 }
+
 .countdown .clock-item .count-number {
   background: var(--accent-color);
   color: var(--font-color);
@@ -196,6 +194,7 @@ section {
   line-height: 1;
   border-radius: 4px 4px 0 0;
 }
+
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
@@ -229,7 +228,6 @@ section {
 }
 
 /* MINT CONTAINER */
-
 .mint-container {
   width: 100%;
   display: flex;
@@ -291,7 +289,6 @@ section {
 }
 
 /* MINTED CONTAINER */
-
 .minted-container {
   display: flex;
   flex-direction: column;
@@ -314,22 +311,26 @@ section {
   margin: 1rem 0;
 }
 
-/* SLIDDER */
-
+/* SLIDER */
 .splide {
-  position: absolute;
-  top: 90px;
-  left: 5rem;
-  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Adjust height as needed */
+  z-index: 10;
 }
 
 .splide__slide {
-  border: var(--accent-color) solid;
-  border-width: 5px 10px;
+  width: 50%; /* Adjust slide width */
+  height: 100%;
 }
 
 .splide__slide img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* SPINNER */
@@ -341,7 +342,6 @@ section {
 }
 
 /* MEDIA QUERIES */
-
 @media screen and (max-width: 768px) {
   .menu {
     gap: 1rem;
@@ -390,7 +390,6 @@ section {
 }
 
 /* UTILITIES */
-
 .hidden {
   display: none;
 }
