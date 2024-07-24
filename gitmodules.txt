@@ -1,0 +1,3 @@
+[submodule "MINKCOIN"]
+    path = MINKCOIN
+    url = https://github.com/minkolaUK/MINKCOIN.git
