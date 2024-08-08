@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Buy Mink Coin</title>
-    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background: #282c34;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 15px 0;
+            background: #007BFF;
             color: white;
+            padding: 10px 0;
+            text-align: center;
         }
 
         nav ul {
             list-style: none;
+            padding: 0;
+            margin: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 15px;
         }
 
         nav ul li {
@@ -36,166 +37,135 @@
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
+            padding: 10px 15px;
             display: block;
-            transition: color 0.3s;
+            font-weight: bold;
         }
 
         nav ul li a:hover {
-            color: #61dafb;
+            background-color: #0056b3;
+            border-radius: 5px;
         }
 
         .container {
-            width: 90%;
             max-width: 1200px;
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .hero {
-            background: linear-gradient(135deg, #007BFF, #6610f2);
-            color: white;
-            padding: 100px 0;
             text-align: center;
+            padding: 50px 0;
+            background: #333;
+            color: white;
         }
 
         .hero img {
+            max-width: 150px;
             border-radius: 50%;
-            border: 5px solid white;
         }
 
         .btn {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: background-color 0.3s;
             margin-top: 20px;
+            padding: 12px 24px;
+            color: white;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
         }
 
         .btn:hover {
             background-color: #218838;
         }
 
-        section.section {
-            padding: 60px 0;
+        h1, h2, h3 {
+            color: #007BFF;
+            text-align: center;
         }
 
-        .section h1, .section h2 {
-            text-align: center;
-            color: #333;
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         footer {
-            background: #282c34;
-            color: white;
             text-align: center;
-            padding: 20px 0;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            background-color: #007BFF;
+            padding: 20px;
+            background: #333;
             color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-align: center;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .back-to-top:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Menu</a>
-                        <div class="dropdown-content">
-                            <a href="index.html#about">About</a>
-                            <a href="index.html#features">Features</a>
-                            <a href="index.html#roadmap">Roadmap</a>
-                            <a href="index.html#team">Team</a>
-                            <a href="index.html#buy">Buy Mink</a>
-                            <a href="how-to-buy.html#instructions">How to Buy</a>
-                            <a href="https://minknft.netlify.app/" target="_blank" rel="noopener noreferrer">NFT Collection</a>
-                            <a href="index.html#contact">Contact</a>
-                            <a href="index.html#store">Store</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#buy">Buy Mink</a></li>
+                <li><a href="how-to-buy.html#instructions">How to Buy</a></li>
+                <li><a href="https://minknft.netlify.app/" target="_blank" rel="noopener noreferrer">NFT Collection</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="container">
-                <img src="images/x-icon/Mink.jpg" alt="Logo" class="logo" style="width: 150px;">
-                <h2>The Future of Mink Coin on ETC</h2>
-                <p style="color: white; font-size: 1.2em;">The first "Me" Coin on the ETC network</p>
-                <a href="index.html#about" class="btn">Learn More</a>
-            </div>
+        <section class="hero">
+            <img src="images/x-icon/Mink.jpg" alt="Mink Coin Logo">
+            <h1>The Future of Mink Coin on ETC</h1>
+            <p>The first "Me" Coin on the ETC network</p>
+            <a href="index.html#about" class="btn">Learn More</a>
         </section>
 
-        <section id="instructions" class="section">
-            <div class="container">
-                <h1>How to Buy Mink Coin</h1>
-                <h2>Step-by-Step Instructions</h2>
-                <!-- Instructions Content -->
+        <section id="instructions" class="container">
+            <h1>How to Buy Mink Coin</h1>
+            <h2>Step-by-Step Instructions</h2>
+            <div>
+                <h3>Step 1: Set Up a Crypto Wallet</h3>
+                <p>If you don't already have a crypto wallet, you'll need to set one up. We recommend using MetaMask:</p>
+                <p><a href="https://metamask.io/" target="_blank">Go to the MetaMask Website</a> and download the wallet extension for your browser. Follow the instructions to create a new wallet and secure your recovery phrase. Please make sure you select ETC (Ethereum Classic) when transferring your ETC from your exchange account to your MetaMask wallet address. <strong>Never share your recovery phrase with anyone!</strong></p>
             </div>
+            <div>
+                <h3>Step 2: Add Ethereum Classic Network</h3>
+                <p>Add the Ethereum Classic network to MetaMask by clicking the network dropdown at the top left corner and selecting <strong>+ Add network</strong>. Enter the following details:</p>
+                <ul>
+                    <li>Network Name: Ethereum Classic</li>
+                    <li>New RPC URL: <strong>https://www.ethercluster.com/etc</strong></li>
+                    <li>Chain ID: <strong>61</strong></li>
+                    <li>Symbol: <strong>ETC</strong></li>
+                    <li>Block Explorer URL: <strong>https://blockscout.com/etc/mainnet</strong></li>
+                </ul>
+                <p>Click <strong>Save</strong>.</p>
+            </div>
+            <div>
+                <h3>Step 3: Buy Ethereum Classic (ETC)</h3>
+                <p>Purchase Ethereum Classic (ETC) from a cryptocurrency exchange such as Binance, Kraken, Bitget, or Coinbase. Once you have ETC, send it to your MetaMask wallet address.</p>
+            </div>
+            <div>
+                <h3>Step 4: Swap ETC for Mink Coin</h3>
+                <p>Use HebeSwap to swap ETC for Mink Coin. <a href="https://app.hebeswap.com/#/swap?outputCurrency=0x89E50A895d0FE5e5A278B2935225f50c063Ef372" target="_blank">Go to Hebe Swap</a>, connect your MetaMask wallet, and enter the amount of ETC you want to swap. Complete the transaction and import Mink Coin into MetaMask using the token address: <small>0x89E50A895d0FE5e5A278B2935225f50c063Ef372</small>.</p>
+            </div>
+            <div>
+                <h3>What is Cryptocurrency?</h3>
+                <p>For a detailed video about crypto, watch the video below:</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/1YyAzVmP9xQ?start=183" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>If you need further assistance, contact us on our Discord group: <a href="https://discord.com/invite/BrK6mC7ufv" target="_blank">Mink Coin Discord</a> or email us at <a href="mailto:Minkcoin@mail.com?subject=Help with Buying Mink Coin">Minkcoin@mail.com</a>.</p>
         </section>
-
-        <!-- Back to Top Button -->
-        <div class="back-to-top">↑</div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Mink Coin. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Mink Coin. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Back to Top Button
-        const backToTopButton = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
 </body>
 </html>
