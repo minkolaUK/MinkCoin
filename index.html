@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The First "Me" Coin on ETC</title>
+    <title>The first "Me" Coin on ETC</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -12,170 +11,117 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
-
+        
+        /* General Styles */
         .container {
             width: 90%;
             max-width: 1200px;
             margin: auto;
             overflow: hidden;
         }
-
+        
         .section {
             padding: 60px 0;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
         }
-
+        
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
-
+        
         .btn, .buy a {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 10px 20px;
             color: white;
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 5px;
             margin-top: 20px;
-            transition: background-color 0.3s;
         }
-
+        
         .btn {
             background-color: #007BFF;
         }
-
+        
         .btn:hover {
             background-color: #0056b3;
         }
-
+        
         .buy a {
             background-color: #28a745;
         }
-
+        
         .buy a:hover {
             background-color: #218838;
         }
-
+        
+        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/x-icon/Mink-background.jpg') no-repeat center center/cover;
+            background: #333;
             color: white;
             text-align: center;
-            padding: 100px 0;
-            margin-bottom: 30px;
+            padding: 0px 0;
         }
-
-        .hero img {
-            width: 150px;
-            max-width: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .hero h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            color: #f39c12;
-            font-size: 1.5em;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li a {
+        
+        /* Dropdown Menu */
+        .dropbtn {
+            background-color: transparent;
             color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: block;
-            font-weight: bold;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
         }
-
+        
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #ddd;
+            color: black;
+        }
+        
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #fff;
+            background-color: #f9f9f9;
             min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
-
+        
         .dropdown-content a {
-            color: #333;
+            color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
-
+        
         .dropdown-content a:hover {
-            background-color: #f4f4f4;
+            background-color: #ddd;
         }
-
+        
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
+        
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Features Grid */
         .features-grid, .team-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            justify-content: center;
         }
-
+        
         .feature-item, .team-member {
             flex: 1;
-            min-width: 220px;
-            background: #fafafa;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .feature-item:hover, .team-member:hover {
-            transform: scale(1.05);
-        }
-
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .timeline-item {
-            background: #007BFF;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .timeline-item h3 {
-            margin-bottom: 15px;
+            min-width: 200px;
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -189,7 +135,7 @@
                             <a href="#roadmap">Roadmap</a>
                             <a href="#team">Team</a>
                             <a href="#buy">Buy Mink</a>
-                            <a href="how-to-buy.html#instructions">How to Buy</a>
+			    <a href="how-to-buy.html#instructions">How to Buy</a>
                             <a href="frontend/nft.html#nft">NFT Collection</a>
                             <a href="#contact">Contact</a>
                             <a href="#store">Store</a>
@@ -199,24 +145,28 @@
             </nav>
         </div>
     </header>
-
+    
     <main>
         <section id="hero" class="hero">
             <div class="container">
-                <img src="images/x-icon/Mink.jpg" alt="Logo" class="logo">
+		<img src="images/x-icon/Mink.jpg" alt="Logo" class="logo" style="width: 40%; max-width: 200px;">
                 <h2>The Future of Mink Coin on ETC</h2>
-                <p>The first "Me" Coin on the ETC network</p>
+                <p style="color: blue;">The first "Me" Coin on the ETC network</p>
                 <a href="#about" class="btn">Learn More</a>
             </div>
         </section>
-
+        
         <section id="about" class="section">
             <div class="container">
                 <h2>About Mink Coin</h2>
-                <p>Mink Coin is a community-driven project designed to create a positive and enjoyable environment for all its participants. It represents the energy and vision of its creator, Minkola, aiming to transform lives while giving back to the community. Join us and be part of something more than just a cryptocurrency.</p>
+                </p>I created Mink Coin to transform lives, starting with my own, while giving back to the community. My passion for crypto and its vibrant community inspired me to develop something that I can share and enjoy with others. Before the lockdown, I was unaware of crypto, but once I understood it, I was eager to dive deeper. Having experienced setbacks with other projects, I was determined to create something reliable and engaging—Mink Coin.</p>
+</p>Mink Coin is not just another "meme" coin or speculative ERC-20 token; it is a "ME" coin, representing the energy and vision of its creator, Minkola. My goal is to grow this project, build a genuine community, and demonstrate that Mink Coin is not a fleeting venture. I aim to bring people together, improve mental health through community interaction, gaming, teamwork, and a sense of belongining.</p>
+</p>This project began as a mere idea to create a coin, but I want to show the public that it can be so much more. With over 20 years of experience in IT, I have numerous ideas that I am eager to bring to life. I don't want to be a couch potato; I want Mink Coin to have real utility.</p>
+</p>I am starting with Mink Coin and will soon introduce seasonal NFTs featuring creative and funky representations of myself. These NFTs will be available for purchase each month, offering continuous engagement. Following the NFT launch, I plan to open an online store where people can buy merchandise like T-shirts, hoodies, baseball caps, tea coasters, candles, cookies, and brownies using Mink Coin. I have been networking with suppliers to facilitate this, and any profits generated will be reinvested into the DAO/pool to further grow the project. Additionally, I will be regularly updating the website to enhance the user experience.</p>
+</p>Mink Coin is a community-driven project designed to create a positive and enjoyable environment for all its participants. Join us, and be part of something more than just a cryptocurrency.</p>
             </div>
         </section>
-
+        
         <section id="features" class="section">
             <div class="container">
                 <h2>Features</h2>
@@ -227,7 +177,7 @@
                     </div>
                     <div class="feature-item">
                         <h3>Protection Against Fleeting Ventures</h3>
-                        <p>A majority of our coin supply will be stored in a burner wallet, providing enhanced security.</p>
+                        <p>A majority of our coin supply will be stored in a burner wallet, providing enhanced security and minimising the risk of fleeting venture.</p>
                     </div>
                     <div class="feature-item">
                         <h3>Scalability</h3>
@@ -239,12 +189,12 @@
                     </div>
                     <div class="feature-item">
                         <h3>Future</h3>
-                        <p>Exciting plans include seasonal NFTs, airdrops, and an online store for exclusive merchandise.</p>
+                        <p>The roadmap includes exciting plans such as seasonal NFT's, Airdrops, Store Merchandise, and further expansion of the project.</p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="roadmap" class="section">
             <div class="container">
                 <h2>Roadmap</h2>
@@ -252,60 +202,63 @@
                     <div class="timeline-item">
                         <h3>2024</h3>
                         <p>Launch of Mink Coin Total Supply: 200,000,000</p>
-                        <p>Total Airdrops: 20,000,000 (15,920,000 MINK Coin Airdropped so far)</p>
-                        <p>Liquidity Pool: 20,000,000 ($1.1K in the liquidity pool so far)</p>
-                        <p>Burner Wallet: 20,000,000 (0 Mink Coin in burner wallet so far)</p>
-                        <p>Platform Development, Community Building, and Seasonal NFTs.</p>
+                        <p>Total Air Drops: 20,000,000 (15,920,000 MINK Coin Air Dropped so far)</p>
+			<p>Liquidity Pool: 20,000,000 ($1.1K in the liqudity pool so far)</p>
+			<p>Burner Wallet: 20,000,000 (0 Mink Coin in burner wallet so far)</p>
+                        <p>Platform Development</p>
+                        <p>Community Building</p>
+                        <p>Mink Coin Seasonal NFT's Total Supply: 1,000</p>
                     </div>
                     <div class="timeline-item">
                         <h3>2025</h3>
                         <p>Global Expansion</p>
-                        <p>Mink Store selling T-Shirts, Hoodies, Tea Coasters, Baseball Caps, Candles, Cookies, Brownies, and more.</p>
+                        <p>Mink Store selling T-Shirts, Hoodies, Tea Coasters, Baseball Caps, Candles, Cookies, Brownies, and more</p>
                         <p>Prizes & Giveaways</p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="team" class="section">
             <div class="container">
-                <h2>Meet the "Me" Team!</h2>
-                <div class="team-grid">
-                    <div class="team-member">
+                <h2 style="text-align: center;">Meet the "Me" Team!</h2>
+                <div class="team-grid" style="justify-content: center;">
+                    <div class="team-member" style="max-width: 200px; margin: 15px auto;">
                         <h3>Minkola</h3>
                         <p>CEO</p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="buy" class="section">
             <div class="container">
                 <h2>Buy Mink Coin</h2>
                 <div class="buy">
-                    <p>Mink Coin MetaMask: <small>0x89E50A895d0FE5e5A278B2935225f50c063Ef372</small></p>
+		    <p>Mink Coin MetaMask:
+		    <small>0x89E50A895d0FE5e5A278B2935225f50c063Ef372</small></p>
                     <a href="https://app.hebeswap.com/#/swap?outputCurrency=0x89E50A895d0FE5e5A278B2935225f50c063Ef372" target="_blank">Buy Mink Coin on HebeSwap!</a>
                     <a href="https://etc.blockscout.com/address/0xFD0bBDb4998622Ba3367480c5f696fE4d76E2ff0" target="_blank">Contact: Blockscout</a>
                     <a href="https://dexscreener.com/ethereumclassic/0xfd0bbdb4998622ba3367480c5f696fe4d76e2ff0" target="_blank">Contact: Dex Screener</a>
-                    <a href="https://hebeswap.com/pool.html?contract=0xfd0bbdb4998622ba3367480c5f696fe4d76e2ff0" target="_blank">Contact: HebeSwap</a>
+					<a href="https://hebeswap.com/pool.html?contract=0xfd0bbdb4998622ba3367480c5f696fe4d76e2ff0" target="_blank">Contact: HebeSwap</a>
                 </div>
             </div>
         </section>
-
+        
         <section id="nft" class="section">
             <div class="container">
-                <h2>Mink Coin Seasonal NFTs (Coming Soon)</h2>
+                <h2>Mink Coin Seasonal NFT's (Coming Soon)</h2>
             </div>
         </section>
-
+        
         <section id="store" class="section">
             <div class="container">
                 <h2>Mink Store (Coming Soon)</h2>
                 <p>Discover exclusive merchandise at our Mink Store! Shop for T-Shirts, Hoodies, Baseball Caps, Tea Coasters, Candles, Cookies, Brownies, and more.</p>
-                <p>Stay tuned for exciting giveaways and prizes!</p>
+		<p>Stay tuned for exciting giveaways and prizes!</p>
             </div>
         </section>
-
+        
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact Us</h2>
@@ -315,12 +268,11 @@
             </div>
         </section>
     </main>
-
+    
     <footer>
         <div class="container">
             <p>&copy; 2024 Mink Coin. All rights reserved.</p>
         </div>
     </footer>
 </body>
-
 </html>
